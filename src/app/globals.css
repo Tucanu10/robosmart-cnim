@@ -3,19 +3,51 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a; /* Gunmetal */
+  --foreground: #D7EFF3; /* Light Cyan */
+  --cal-poly-green: #41B862;
+  --light-cyan: #D7EFF3;
+  --gunmetal: #0a0a0a;
+  --royal-blue: #0a2463;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle, #12b86a 1%, #1a5e42 15%, #141414 80%);
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+}
+
+body {
+  background: radial-gradient(circle, #12b86a 1%, #1a5e42 30%, #141414 60%);
+  background-size: 200% 200%;
+  animation: gradientMove 30s infinite linear;
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--cal-poly-green); /* Cal Poly Green */
+}
+
+a {
+  color: var(--light-cyan); /* Light Cyan */
+}
+
+a:hover {
+  color: #ffffff; /* White on hover */
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;  /* For Internet Explorer 10+ */
+  scrollbar-width: none; /* For Firefox */
 }
