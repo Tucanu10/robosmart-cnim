@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Navbar from '../components/Navbar';
 import BottomButtons from '../components/BottomButtons';
 import BackgroundGradient from '@/components/BackgroundGradient';
@@ -13,9 +14,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <BackgroundGradient />
-      <body>
+      <head><link
+            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+            rel="stylesheet"
+          />
+          <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet"/></head>
+      <body className="font-inter">
         <Navbar />
-        <main>{children}
+        <main>
+          {children}
         <SpeedInsights />
         </main>
         <BottomButtons />

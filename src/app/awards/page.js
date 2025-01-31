@@ -12,31 +12,32 @@ export default function Awards() {
 
   return (
     <div className="p-8 text-center">
-      <h1 className="text-4xl font-bold text-light-cyan">Awards & Achievements</h1>
-      <p className="text-light-cyan mt-4">
-        Here are the events we have participated in and our achievements.
-      </p>
+  <h1 className="text-4xl font-bold text-light-cyan font-playwrite">
+    🏆 Our Trophy Wall 🏅
+  </h1>
+  <p className="text-light-cyan mt-4">
+    Check out our journey through competitions!
+  </p>
+  <p className="text-light-cyan mt-2">
+    Every challenge makes us stronger! Keep scrolling to see our growth! 📈
+  </p>
+  <Link
+    href="https://ftc-events.firstinspires.org/team/19110"
+    className="text-green-400 hover:underline mt-4 inline-block"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    🌐 Official FTC Events Page
+  </Link>
 
       {/* Centered Grid */}
-      <div className="mt-8 flex flex-wrap justify-center gap-6">
+      <div className="mt-8 flex flex-wrap justify-center gap-6 pb-20">
         {awards.map((award, index) => (
           <EventCard key={index} year={award.year} event={award.event} award={award.award} />
         ))}
       </div>
 
-      {/* FTC Official Events Page */}
-      <div className="mt-12">
-        <h2 className="text-2xl font-bold text-light-cyan">FTC Events Page</h2>
-        <p className="text-light-cyan mt-2">Check out our official FTC events page for more details.</p>
-        <Link
-          href="https://ftc-events.firstinspires.org/team/19110"
-          className="text-green-400 hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit FTC Events Page
-        </Link>
-      </div>
+      
     </div>
   );
 }

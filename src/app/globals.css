@@ -8,7 +8,7 @@
   --cal-poly-green: #41B862;
   --light-cyan: #D7EFF3;
   --gunmetal: #0a0a0a;
-  --royal-blue: #0a2463;
+  --royal-blue: #e92f6d;
 }
 
 body {
@@ -20,14 +20,21 @@ body {
   overflow: auto;
 }
 
-body {
-  background: radial-gradient(circle, #12b86a 1%, #1a5e42 30%, #141414 60%);
-  background-size: 200% 200%;
-  animation: gradientMove 30s infinite linear;
-  height: 100vh;
-  margin: 0;
-  overflow: auto;
+@keyframes carousel {
+  0% { opacity: 0; transform: translateX(100%); }
+  5% { opacity: 1; transform: translateX(0); }
+  25% { opacity: 1; transform: translateX(0); }
+  30% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 0; transform: translateX(-100%); }
 }
+
+.carousel-slide {
+  animation: carousel 20s infinite;
+}
+
+.carousel-slide:nth-child(1) { animation-delay: 0s; }
+.carousel-slide:nth-child(2) { animation-delay: 5s; }
+.carousel-slide:nth-child(3) { animation-delay: 10s; }
 
 /* Navbar */
 nav {

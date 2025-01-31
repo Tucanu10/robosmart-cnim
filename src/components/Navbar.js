@@ -1,11 +1,12 @@
 "use client";
+import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUsers, faTrophy, faInfoCircle } from '@fortawesome/free-solid-svg-icons'; // Import the icons
 
 export default function Navbar() {
   const navbarConstants = {
-    background: "bg-cal-poly-green/10",
+    background: "bg-slate-300/10",
     padding: "p-4",
     textColor: "text-light-cyan",
     hoverColor: "hover:text-white",
@@ -19,9 +20,17 @@ export default function Navbar() {
       className={`${navbarConstants.background} ${navbarConstants.padding} ${navbarConstants.backdropBlur} rounded-b-3xl max-w-screen-lg mx-auto`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className={`text-lg font-bold ${navbarConstants.textColor}`}>
-          Robosmart #19110
-        </h1>
+      <h1 className={`text-lg font-bold ${navbarConstants.textColor} flex items-center`}>
+  {/* SVG Logo from file */}
+  <div className="mr-2 w-6 h-6 md:w-8 md:h-8">
+    <img
+      src="/logo.svg"
+      alt="Robosmart Logo"
+      className="w-full h-full"
+    />
+  </div>
+  <span className="font-playwrite">Robosmart #19110</span>
+</h1>
 
         {/* Desktop menu */}
         <div className="hidden lg:flex space-x-4">

@@ -13,6 +13,10 @@ export default {
         'light-cyan': '#D7EFF3',
         'gunmetal': '#0a0a0a',
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        playwrite: ['"Playwrite IN"', 'sans-serif'],
+      },
     },
   },
   plugins: [],

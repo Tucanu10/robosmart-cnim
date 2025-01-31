@@ -2,12 +2,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faUniversity } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 const BottomButtons = ({
   width = "w-48",
-  background = "bg-cal-poly-green/10",
+  background = "bg-slate-300/10",
   borderRadius = "rounded-full",
   padding = "py-3 px-3",
 }) => {
@@ -41,7 +41,7 @@ const BottomButtons = ({
           <FontAwesomeIcon icon={faEnvelope} size="lg" />
         </button>
         <a href="https://cnimslatina.ro/despre" className="text-light-cyan hover:text-white" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faUniversity} size="lg" />
+          <FontAwesomeIcon icon={faLocationDot} size="lg" />
         </a>
       </div>
     </div>
