@@ -16,7 +16,7 @@ export default function FTCInfo() {
           outreach and engineering innovation.
         </p>
 
-        <div className="bg-cal-poly-green/10 rounded-xl p-6 mb-8 backdrop-blur-md border border-light-cyan/0">
+        <div className="bg-slate-300/10 rounded-xl p-6 mb-8 backdrop-blur-md border border-light-cyan/0">
           <h2 className="text-2xl font-bold text-light-cyan mb-4">
             Exploring Ocean Ecosystems 🌐🐠
           </h2>

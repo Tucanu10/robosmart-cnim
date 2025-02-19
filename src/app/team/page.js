@@ -3,66 +3,70 @@ import TeamCard from '../../components/TeamCard';
 export default function Team() {
   const members = [
     { name: "Dan Pietriș"
-      , role: "Mentor"
-      , image: ""
+      , role: "Team Mentor"
+      , image: "/images/pietris.png"
       , description: "A dedicated mentor who inspires innovation and teamwork, guiding the team through challenges with wisdom and experience." },
 
     { name: "Sorin"
       , role: "Team Leader"
       , image: "/images/absent.png"
-      , description: "The visionary leader, orchestrating projects with strategic thinking, ensuring smooth collaboration, and keeping the team motivated.\n\n\n 'Arunc cu robotu pe geam'" },
+      , description: "Arunc cu robotu pe geam 🤖🔥 \n\n@sorin.snk" },
 
     { name: "Țucă"
-      , role: "Programmer"
+      , role: "Chief-Programmer"
       , image: "/images/tuca.png", 
-      description: "A talented programmer who pushes coding limits, optimizing performance and crafting efficient algorithms. " },
+      description: "🗣️Ba am o idee foarte BUNĂ🙅 \n\n@alex.tucanu" },
 
     { name: "Luca"
-      , role: "3D Designer"
+      , role: "Mechanic"
       , image: "/images/luca.png"
-      , description: "A creative mind in 3D design, turning ideas into detailed models with precision and artistic vision.\n\n\n 'Am otita'." },
+      , description: "Am otita🧏🏻‍♂️ \n\n@luca.ene" },
 
     { name: "Lorena"
-      , role: "Notebook Coordinator"
-      , image: ""
-      , description: "The structural expert, ensuring every detail in the engineering notebook aligns with competition standards.\n\n\n 'hei cf?'" },
+      , role: "Notebook Redactor"
+      , image: "/images/lorena.png"
+      , description: "hei cf? \n\n@capsunata" },
 
     { name: "Cătălin"
-      , role: "Mechanic"
+      , role: "Web Designer"
       , image: "/images/samanta.png"
-      , description: "The hands-on expert, ensuring the robot's mechanics function seamlessly through meticulous engineering.\n\n\n 'Seminte enjoyer'" },
+      , description: "Seminte enjoyer \n\n@catalin_993" },
 
     { name: "Măldă"
-      , role: "PR & Marketing"
+      , role: "Chief-Mechanic"
       , image: "/images/malda.png"
-      , description: "The marketing mastermind, ensuring the team's achievements reach the right audience with engaging campaigns.\n\n\n 'Sigma + chill guy'" },
+      , description: "Sigma + chill guy" },
 
     { name: "Radu"
       , role: "Mechanic"
       , image: "/images/coma.png"
-      , description: "A skilled builder, assembling and refining mechanical systems with innovation and problem-solving expertise.\n\n\n 'Nu plangem dupa femei cum plangem dupa SHAORMA'" },
+      , description: "Nu plangem dupa femei cum plangem dupa SHAORMA 🌯\n\n@_andreikom_" },
 
     { name: "Alexia"
       , role: "Notebook Coordinator"
       , image: "/images/zao.png"
-      , description: "An organized and detail-oriented coordinator, structuring the team's documentation for clarity and competition success." },
+      , description: "An organized and detail-oriented coordinator. \n\n@alexia.zao" },
 
     { name: "Dasha"
-      , role: "PR & Marketing"
-      , image: ""
+      , role: "Notebook Designer"
+      , image: "/images/dasha.png"
       , description: "A creative strategist, developing engaging content and fostering connections to enhance the team’s public presence." },
 
-    { name: "Anca"
-      , role: "Notebook Redactor"
-      , image: ""
-      , description: "A meticulous writer, documenting the team’s journey with precision to showcase progress and innovation." },
-  
+    { name: "Ancuța"
+      , role: "3D Designer"
+      , image: "/images/ancuta.png"
+      , description: "A great creative mind, bringing ideas to reality with the help of 3D printing." },
+    { name: "Andrei"
+      , role: "Merchandiser"
+      , image: "/images/bisbal.png"        
+      , description: "Brawl Stars\nClash Royale\nTikTok \n\n@andrei__martinescu" },
 ];
 
   return (
     <div className="min-h-screen h-200vh overflow-y-scroll pb-20">
       <div className="p-8">
-        <h1 className="text-3xl font-bold font-playwrite text-light-cyan text-center">👋 Meet the Dream Team! 🌟</h1>
+        <h1 className="text-2xl md:text-3xl font-bold font-playwrite text-light-cyan text-center">👋 Meet the Dream Team! 🌟</h1>
+        <h6 className="font-bold font-playwrite text-light-cyan text-center"> Click each of us for a surprise</h6>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 lg:p-96 lg:pt-0 mt-8">
           {members.map((member, index) => (
             <TeamCard key={index} member={member} />
